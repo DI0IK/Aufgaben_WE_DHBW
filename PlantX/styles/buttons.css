@@ -17,6 +17,7 @@ button.primary {
 button.primary:hover {
   background-color: var(--primary-30);
   border-color: var(--primary-20);
+  cursor: pointer;
 }
 button.primary:active {
   background-color: var(--primary-40);
@@ -31,6 +32,7 @@ button.secondary {
 button.secondary:hover {
   background-color: var(--primary-40);
   border-color: var(--primary-20);
+  cursor: pointer;
 }
 button.secondary:active {
   background-color: transparent;
