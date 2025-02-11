@@ -1,0 +1,60 @@
+/* Font classes */
+.font-title-m,
+.font-title-m * {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: calc(0.05 * 64px);
+}
+
+@media (max-width: 767px) {
+  .font-title-m,
+  .font-title-m * {
+    font-family: Orbitron;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: calc(0.05 * 40px);
+  }
+}
+
+.font-body-m,
+.font-body-m * {
+  font-family: Oxanium;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26.4px;
+  letter-spacing: calc(0.05 * 24px);
+}
+
+@media (max-width: 767px) {
+  .font-body-m,
+  .font-body-m * {
+    font-family: Oxanium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: calc(0.05 * 16px);
+  }
+}
+
+.font-body-s,
+.font-body-s * {
+  font-family: Oxanium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: calc(0.05 * 16px);
+}
+
+@media (max-width: 767px) {
+  .font-body-s,
+  .font-body-s * {
+    font-family: Oxanium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: calc(0.05 * 16px);
+  }
+}
