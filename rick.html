@@ -37,9 +37,6 @@
     <script>
       function makeFullscreen() {
         document.documentElement.requestFullscreen();
-
-        // open in a new window
-        window.open(location.href, "_blank"); 
       }
 
       document.addEventListener("click", () => {
@@ -62,6 +59,41 @@
       });
 
       document.addEventListener("keyup", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("mouseup", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("touchmove", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("touchend", (e) => {
         e.preventDefault();
         makeFullscreen();
       });
