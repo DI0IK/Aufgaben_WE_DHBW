@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <video
+      src="https://shattereddisk.github.io/rickroll/rickroll.mp4"
+      nocontrols
+      autoplay
+      muted
+    ></video>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      video {
+        max-width: 100vw;
+        max-height: 100vh;
+        object-fit: cover;
+      }
+
+      video::-webkit-media-controls {
+        display: none;
+      }
+
+      video::-webkit-media-controls-enclosure {
+        display: none;
+      }
+    </style>
+    <script>
+      function makeFullscreen() {
+        document.documentElement.requestFullscreen();
+
+        // open in a new window
+        window.open(location.href, "_blank"); 
+      }
+
+      document.addEventListener("click", () => {
+        makeFullscreen();
+      });
+      document.addEventListener("fullscreenchange", () => {
+        if (!document.fullscreenElement) {
+          makeFullscreen();
+        }
+      });
+
+      document.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+
+      document.addEventListener("keyup", (e) => {
+        e.preventDefault();
+        makeFullscreen();
+      });
+    </script>
+  </body>
+</html>
