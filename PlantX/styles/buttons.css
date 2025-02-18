@@ -11,7 +11,7 @@ button {
 
 button.primary {
   background-color: var(--primary-50);
-  border: 2px var(--primary-40) solid;
+  border: 3px var(--primary-40) solid;
   color: #000126;
 }
 button.primary:hover {
@@ -26,7 +26,7 @@ button.primary:active {
 
 button.secondary {
   background-color: transparent;
-  border: 2px var(--primary-50) solid;
+  border: 3px var(--primary-50) solid;
   color: var(--fg);
 }
 button.secondary:hover {
